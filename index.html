@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Digital | Seus Melhores eBooks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Digital<span>Books</span></div>
+        <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </nav>
+
+    <header class="hero">
+        <h1>Conhecimento sem limites.</h1>
+        <p>Explore nossa coleção de eBooks exclusivos e aprenda algo novo hoje.</p>
+        <a href="#catalogo" class="btn-cta">Ver Catálogo</a>
+    </header>
+
+    <div class="filters">
+        <button onclick="filterBooks('todos')">Todos</button>
+        <button onclick="filterBooks('negocios')">Negócios</button>
+        <button onclick="filterBooks('tecnologia')">Tecnologia</button>
+    </div>
+
+    <main id="catalogo" class="book-grid">
+        <div class="book-card" data-category="tecnologia">
+            <div class="book-cover">
+                <img src="./img2/IA1.png" ></img>
+            </div>
+            <h3>Inteligência Artificial</h3>
+            <p class="author">Por Alan Turing Jr.</p>
+            <p class="price">R$ 29,90</p>
+            <button class="btn-buy" onclick="addToCart()"><a href="compre.html"> </li>Comprar Agora</button></a>
+                   
+        </div>
+
+        <div class="book-card" data-category="negocios">
+            <div class="book-cover">Mindset Vencedor</div>
+            <h3>Estratégias de Mercado</h3>
+            <p class="author">Por Maria Silva</p>
+            <p class="price">R$ 45,00</p>
+            <button class="btn-buy" onclick="addToCart()"><a href="compre.html">Comprar Agora</button></a>
+        </div>
+
+        <div class="book-card" data-category="tecnologia">
+            <div class="book-cover">Código Limpo</div>
+            <h3>Mastering JavaScript</h3>
+            <p class="author">Por Dev Master</p>
+            <p class="price">R$ 37,50</p>
+            <button class="btn-buy" onclick="addToCart()"><a href="compre.html">Comprar Agora</button></a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
